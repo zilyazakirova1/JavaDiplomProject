@@ -75,6 +75,12 @@ public class SavingAccount extends Account {
         } else {
             return false;
         }
+        // balance = balance + amount;
+        //        if (balance < maxBalance) {
+        //            return true;
+        //        } else {
+        //            return false;
+        //        }
     }
 
     /**
