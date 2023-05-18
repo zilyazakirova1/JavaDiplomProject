@@ -44,23 +44,12 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.SavingAccountTest.testConstructorWithNegativeRate">
-    <configuration name="SavingAccountTest.YearChangePositiveBalance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javaqadiplom" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.netology.javaqadiplom.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.netology.javaqadiplom" />
-      <option name="MAIN_CLASS_NAME" value="ru.netology.javaqadiplom.SavingAccountTest" />
-      <option name="METHOD_NAME" value="YearChangePositiveBalance" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean verify" />
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.SavingAccountTest.shouldAddMoreThanMaxBalance">
     <configuration name="SavingAccountTest.YearChangeRounding" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaqadiplom" />
       <extension name="coverage">
@@ -109,6 +98,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SavingAccountTest.shouldAddMoreThanMaxBalance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaqadiplom" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.netology.javaqadiplom.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.netology.javaqadiplom" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.javaqadiplom.SavingAccountTest" />
+      <option name="METHOD_NAME" value="shouldAddMoreThanMaxBalance" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SavingAccountTest.testConstructorWithNegativeRate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaqadiplom" />
       <extension name="coverage">
@@ -127,11 +132,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SavingAccountTest.shouldAddMoreThanMaxBalance" />
         <item itemvalue="JUnit.SavingAccountTest.testConstructorWithNegativeRate" />
         <item itemvalue="JUnit.SavingAccountTest.shouldAddLessThanMaxBalance" />
         <item itemvalue="JUnit.SavingAccountTest.YearChangeZeroRate" />
         <item itemvalue="JUnit.SavingAccountTest.YearChangeRounding" />
-        <item itemvalue="JUnit.SavingAccountTest.YearChangePositiveBalance" />
       </list>
     </recent_temporary>
   </component>

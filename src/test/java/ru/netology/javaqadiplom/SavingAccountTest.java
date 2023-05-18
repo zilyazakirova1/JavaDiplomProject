@@ -12,7 +12,7 @@ public class SavingAccountTest {
         int maxBalance = 10_000;
         int rate = -1;
 
-        Assertions.assertThrows(RuntimeException.class, () -> {
+        Assertions.assertThrows(IllegalArgumentException.class, () -> {
             new SavingAccount(initialBalance, minBalance, maxBalance, rate);
         });
     }
