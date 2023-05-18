@@ -31,6 +31,8 @@ public class SavingAccount extends Account {
         this.rate = rate;
     }
 
+           // throw new RuntimeException(
+
     /**
      * Операция оплаты с карты на указанную сумму.
      * В результате успешного вызова этого метода, баланс должен уменьшиться
