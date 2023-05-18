@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a817fe0e-bb28-469b-8608-fd3ee88eaa68" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaqa-team-diplom-2/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaqa-team-diplom-2/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaqa-team-diplom-2/src/main/java/ru/netology/javaqadiplom/Account.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaqa-team-diplom-2/src/main/java/ru/netology/javaqadiplom/Bank.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaqa-team-diplom-2/src/main/java/ru/netology/javaqadiplom/CreditAccount.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaqa-team-diplom-2/src/main/java/ru/netology/javaqadiplom/SavingAccount.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaqa-team-diplom-2/src/test/java/ru/netology/javaqadiplom/CreditAccountTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaqa-team-diplom-2/src/test/java/ru/netology/javaqadiplom/SavingAccountTest.java" beforeDir="false" />
-    </list>
+    <list default="true" id="a817fe0e-bb28-469b-8608-fd3ee88eaa68" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
