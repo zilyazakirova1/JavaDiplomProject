@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 public class CreditAccountTest {
 
     @Test
-    public void shouldAddToPositiveBalance()  {
+    public void shouldAddToPositiveBalance() {
         CreditAccount account = new CreditAccount(
                 0,
                 5000,
@@ -20,7 +20,7 @@ public class CreditAccountTest {
     }
 
     @Test
-    public void shouldAddToNegativeBalance()  {
+    public void shouldAddToNegativeBalance() {
         CreditAccount account = new CreditAccount(
                 0,
                 5000,
@@ -33,7 +33,7 @@ public class CreditAccountTest {
     }
 
     @Test
-    public void shouldAddToZeroBalance()  {
+    public void shouldAddToZeroBalance() {
         CreditAccount account = new CreditAccount(
                 0,
                 5000,
@@ -61,7 +61,7 @@ public class CreditAccountTest {
     }
 
     @Test
-    public void shouldPayToPositiveAmount()  {
+    public void shouldPayToPositiveAmount() {
         CreditAccount account = new CreditAccount(
                 0,
                 5000,
@@ -74,7 +74,7 @@ public class CreditAccountTest {
     }
 
     @Test
-    public void shouldPayToNegativeAmount()  {
+    public void shouldPayToNegativeAmount() {
         CreditAccount account = new CreditAccount(
                 0,
                 5000,
@@ -87,7 +87,7 @@ public class CreditAccountTest {
     }
 
     @Test
-    public void shouldPayToZeroAmount()  {
+    public void shouldPayToZeroAmount() {
         CreditAccount account = new CreditAccount(
                 0,
                 5000,
@@ -98,32 +98,35 @@ public class CreditAccountTest {
 
         Assertions.assertEquals(0, account.getBalance());
     }
+
     @Test
-    public void shouldYearChangeIfBalancePositive()  {
+    public void shouldYearChangeIfBalancePositive() {
         CreditAccount account = new CreditAccount(
                 200,
                 5000,
                 15
         );
 
-      //  account.yearChange();
+        //  account.yearChange();
 
         Assertions.assertEquals(0, account.yearChange());
     }
+
     @Test
-    public void shouldYearChangeIfBalanceNegative()  {
+    public void shouldYearChangeIfBalanceNegative() {
         CreditAccount account = new CreditAccount(
                 -200,
                 5000,
                 15
         );
 
-       // account.yearChange();
+        // account.yearChange();
 
         Assertions.assertEquals(-30, account.yearChange());
     }
+
     @Test
-    public void shouldYearChangeIfBalanceZero()  {
+    public void shouldYearChangeIfBalanceZero() {
         CreditAccount account = new CreditAccount(
                 0,
                 5000,
@@ -134,8 +137,9 @@ public class CreditAccountTest {
 
         Assertions.assertEquals(0, account.yearChange());
     }
+
     @Test
-    public void GetterCreditLimit()  {
+    public void GetterCreditLimit() {
         CreditAccount account = new CreditAccount(200, 5000, 15);
         int expected = 5000;
         Assertions.assertEquals(expected, account.getCreditLimit());

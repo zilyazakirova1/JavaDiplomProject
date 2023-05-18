@@ -8,6 +8,7 @@ package ru.netology.javaqadiplom;
  */
 public class CreditAccount extends Account {
     protected int creditLimit;
+
     /**
      * Создаёт новый объект кредитного счёта с заданными параметрами.
      * Если параметры некорректны (кредитный лимит отрицательный и так далее), то
@@ -16,10 +17,10 @@ public class CreditAccount extends Account {
      * @param initialBalance - неотрицательное число, начальный баланс для счёта
      * @param creditLimit    - неотрицательное число, максимальная сумма которую можно задолжать банку
      * @param rate           - неотрицательное число, ставка кредитования для расчёта долга за отрицательный баланс
-     * @param creditLimit - неотрицательное число, максимальная сумма которую можно задолжать банку
-     * @param rate - неотрицательное число, ставка кредитования для расчёта долга за отрицательный баланс
+     * @param creditLimit    - неотрицательное число, максимальная сумма которую можно задолжать банку
+     * @param rate           - неотрицательное число, ставка кредитования для расчёта долга за отрицательный баланс
      */
-   public CreditAccount(int initialBalance, int creditLimit, int rate) {
+    public CreditAccount(int initialBalance, int creditLimit, int rate) {
         if (rate <= 0) {
             throw new IllegalArgumentException(
                     "Накопительная ставка не может быть отрицательной, а у вас: " + rate
@@ -52,6 +53,7 @@ public class CreditAccount extends Account {
     }
 
 */
+
     /**
      * Операция оплаты с карты на указанную сумму.
      * В результате успешного вызова этого метода, баланс должен уменьшиться
@@ -77,7 +79,7 @@ public class CreditAccount extends Account {
     }
 
 
-     /**
+    /**
      * Операция пополнения карты на указанную сумму.
      * В результате успешного вызова этого метода, баланс должен увеличиться
      * на сумму покупки. Если же операция может привести к некорректному
@@ -86,8 +88,8 @@ public class CreditAccount extends Account {
      *
      * @param amount - сумма пополнения
      * @param amount
-     * @return true если операция прошла успешно, false иначе.
      * @param amount
+     * @return true если операция прошла успешно, false иначе.
      * @return
      */
     @Override
@@ -121,7 +123,9 @@ public class CreditAccount extends Account {
      * @return
      */
     @Override
-    public int yearChange() {return balance / 100 * rate;}
+    public int yearChange() {
+        return balance / 100 * rate;
+    }
 
   /*  @Override
     public int yearChange() {
