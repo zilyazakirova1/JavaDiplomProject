@@ -6,6 +6,17 @@ import org.junit.jupiter.api.Test;
 public class SavingAccountTest {
 
     @Test
+    public void testConstructorWithNegativeRate() {
+        int initialBalance = 2000;
+        int minBalance = 1_000;
+        int maxBalance = 10_000;
+        int rate = -1;
+
+        Assertions.assertThrows(IllegalArgumentException.class, () -> {
+            new SavingAccount(initialBalance, minBalance, maxBalance, rate);
+        });
+    }
+    @Test
     public void shouldAddLessThanMaxBalance() {
         SavingAccount account = new SavingAccount(
                 2_000,

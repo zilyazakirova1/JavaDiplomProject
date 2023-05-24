@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="a817fe0e-bb28-469b-8608-fd3ee88eaa68" name="Changes" comment="" />
+=======
+    <list default="true" id="a817fe0e-bb28-469b-8608-fd3ee88eaa68" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/javaqadiplom/SavingAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/javaqadiplom/SavingAccount.java" afterDir="false" />
+    </list>
+>>>>>>> 48f87434cd8098c6bb1a700c581184af17a9a3e2
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,11 +29,6 @@
         <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="workspaceImportEnabled" value="true" />
-      </MavenImportingSettings>
-    </option>
   </component>
   <component name="ProjectId" id="2Pt2Lh8UldtdHtyP1F9T1iAmyZq" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -38,7 +40,11 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+<<<<<<< HEAD
     "last_opened_file_path": "C:/Users/Ruslan/Desktop/Java/JavaDiplomProject/javaqa-team-diplom-2"
+=======
+    "last_opened_file_path": "C:/Program Files/Git/JavaDiplomProject"
+>>>>>>> 48f87434cd8098c6bb1a700c581184af17a9a3e2
   }
 }]]></component>
   <component name="RunAnythingCache">
@@ -46,8 +52,13 @@
       <command value="mvn clean verify" />
     </option>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="JUnit.SavingAccountTest.shouldAddLessThanMaxBalance">
     <configuration name="SavingAccountTest.YearChangePositiveBalance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+=======
+  <component name="RunManager" selected="JUnit.SavingAccountTest">
+    <configuration name="SavingAccountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+>>>>>>> 48f87434cd8098c6bb1a700c581184af17a9a3e2
       <module name="javaqadiplom" />
       <extension name="coverage">
         <pattern>
@@ -57,40 +68,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.netology.javaqadiplom" />
       <option name="MAIN_CLASS_NAME" value="ru.netology.javaqadiplom.SavingAccountTest" />
-      <option name="METHOD_NAME" value="YearChangePositiveBalance" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SavingAccountTest.YearChangeRounding" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javaqadiplom" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.netology.javaqadiplom.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.netology.javaqadiplom" />
-      <option name="MAIN_CLASS_NAME" value="ru.netology.javaqadiplom.SavingAccountTest" />
-      <option name="METHOD_NAME" value="YearChangeRounding" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SavingAccountTest.YearChangeZeroRate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javaqadiplom" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.netology.javaqadiplom.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.netology.javaqadiplom" />
-      <option name="MAIN_CLASS_NAME" value="ru.netology.javaqadiplom.SavingAccountTest" />
-      <option name="METHOD_NAME" value="YearChangeZeroRate" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -111,7 +89,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SavingAccountTest.shouldPayMoreThanMinBalance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SavingAccountTest.shouldAddMoreThanMaxBalance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaqadiplom" />
       <extension name="coverage">
         <pattern>
@@ -121,7 +99,39 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.netology.javaqadiplom" />
       <option name="MAIN_CLASS_NAME" value="ru.netology.javaqadiplom.SavingAccountTest" />
-      <option name="METHOD_NAME" value="shouldPayMoreThanMinBalance" />
+      <option name="METHOD_NAME" value="shouldAddMoreThanMaxBalance" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SavingAccountTest.testConstructorWithNegativeInitialBalance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaqadiplom" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.netology.javaqadiplom.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.netology.javaqadiplom" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.javaqadiplom.SavingAccountTest" />
+      <option name="METHOD_NAME" value="testConstructorWithNegativeInitialBalance" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SavingAccountTest.testConstructorWithNegativeRate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaqadiplom" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.netology.javaqadiplom.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.netology.javaqadiplom" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.javaqadiplom.SavingAccountTest" />
+      <option name="METHOD_NAME" value="testConstructorWithNegativeRate" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -129,11 +139,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SavingAccountTest" />
+        <item itemvalue="JUnit.SavingAccountTest.shouldAddMoreThanMaxBalance" />
         <item itemvalue="JUnit.SavingAccountTest.shouldAddLessThanMaxBalance" />
-        <item itemvalue="JUnit.SavingAccountTest.YearChangeZeroRate" />
-        <item itemvalue="JUnit.SavingAccountTest.YearChangeRounding" />
-        <item itemvalue="JUnit.SavingAccountTest.YearChangePositiveBalance" />
-        <item itemvalue="JUnit.SavingAccountTest.shouldPayMoreThanMinBalance" />
+        <item itemvalue="JUnit.SavingAccountTest.testConstructorWithNegativeRate" />
+        <item itemvalue="JUnit.SavingAccountTest.testConstructorWithNegativeInitialBalance" />
       </list>
     </recent_temporary>
   </component>
@@ -154,6 +164,13 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="COLUMN_ID_WIDTH">
+                <map>
+                  <entry key="Table.Default.Author.ColumnIdWidth" value="111" />
+                  <entry key="Table.Default.Date.ColumnIdWidth" value="77" />
+                  <entry key="Table.Space.CommitStatus.ColumnIdWidth" value="66" />
+                </map>
+              </option>
               <option name="FILTERS">
                 <map>
                   <entry key="branch">
@@ -163,13 +180,6 @@
                       </list>
                     </value>
                   </entry>
-                </map>
-              </option>
-              <option name="COLUMN_ID_WIDTH">
-                <map>
-                  <entry key="Table.Default.Author.ColumnIdWidth" value="111" />
-                  <entry key="Table.Default.Date.ColumnIdWidth" value="77" />
-                  <entry key="Table.Space.CommitStatus.ColumnIdWidth" value="66" />
                 </map>
               </option>
             </State>
