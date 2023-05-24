@@ -34,6 +34,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2Pt2Lh8UldtdHtyP1F9T1iAmyZq" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -42,21 +45,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_directory_selection": "C:/Program Files/Git/JavaDiplomProject/src/main/java/ru/netology/javaqadiplom",
-    "last_opened_file_path": "C:/Program Files/Git/JavaDiplomProject"
-  }
-}]]></component>
+  <component name="PropertiesComponent">{
+}</component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn clean verify" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SavingAccountTest.shouldPayLessThanMinBalance">
-    <configuration name="SavingAccountTest.shouldAddMoreThanMaxBalance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.SavingAccountTest.shouldPayAmountMoreZero">
+    <configuration name="SavingAccountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaqadiplom" />
       <extension name="coverage">
         <pattern>
@@ -66,13 +63,28 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.netology.javaqadiplom" />
       <option name="MAIN_CLASS_NAME" value="ru.netology.javaqadiplom.SavingAccountTest" />
-      <option name="METHOD_NAME" value="shouldAddMoreThanMaxBalance" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SavingAccountTest.YearChangeZeroRate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaqadiplom" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.netology.javaqadiplom.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.netology.javaqadiplom" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.javaqadiplom.SavingAccountTest" />
+      <option name="METHOD_NAME" value="YearChangeZeroRate" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SavingAccountTest.shouldPayLessThanMinBalance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SavingAccountTest.minBalanceBMoreThanMaxBalance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaqadiplom" />
       <extension name="coverage">
         <pattern>
@@ -82,13 +94,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.netology.javaqadiplom" />
       <option name="MAIN_CLASS_NAME" value="ru.netology.javaqadiplom.SavingAccountTest" />
-      <option name="METHOD_NAME" value="shouldPayLessThanMinBalance" />
+      <option name="METHOD_NAME" value="minBalanceBMoreThanMaxBalance" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SavingAccountTest.testConstructorWithNegativeInitialBalance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SavingAccountTest.shouldAddAmountMoreZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaqadiplom" />
       <extension name="coverage">
         <pattern>
@@ -98,13 +110,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.netology.javaqadiplom" />
       <option name="MAIN_CLASS_NAME" value="ru.netology.javaqadiplom.SavingAccountTest" />
-      <option name="METHOD_NAME" value="testConstructorWithNegativeInitialBalance" />
+      <option name="METHOD_NAME" value="shouldAddAmountMoreZero" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SavingAccountTest.testConstructorWithNegativeMinBalance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SavingAccountTest.shouldPayAmountMoreZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaqadiplom" />
       <extension name="coverage">
         <pattern>
@@ -114,23 +126,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.netology.javaqadiplom" />
       <option name="MAIN_CLASS_NAME" value="ru.netology.javaqadiplom.SavingAccountTest" />
-      <option name="METHOD_NAME" value="testConstructorWithNegativeMinBalance" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SavingAccountTest.testConstructorWithNegativeRate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javaqadiplom" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.netology.javaqadiplom.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.netology.javaqadiplom" />
-      <option name="MAIN_CLASS_NAME" value="ru.netology.javaqadiplom.SavingAccountTest" />
-      <option name="METHOD_NAME" value="testConstructorWithNegativeRate" />
+      <option name="METHOD_NAME" value="shouldPayAmountMoreZero" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -138,11 +134,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SavingAccountTest.shouldPayLessThanMinBalance" />
-        <item itemvalue="JUnit.SavingAccountTest.shouldAddMoreThanMaxBalance" />
-        <item itemvalue="JUnit.SavingAccountTest.testConstructorWithNegativeInitialBalance" />
-        <item itemvalue="JUnit.SavingAccountTest.testConstructorWithNegativeMinBalance" />
-        <item itemvalue="JUnit.SavingAccountTest.testConstructorWithNegativeRate" />
+        <item itemvalue="JUnit.SavingAccountTest.shouldPayAmountMoreZero" />
+        <item itemvalue="JUnit.SavingAccountTest.shouldAddAmountMoreZero" />
+        <item itemvalue="JUnit.SavingAccountTest.minBalanceBMoreThanMaxBalance" />
+        <item itemvalue="JUnit.SavingAccountTest" />
+        <item itemvalue="JUnit.SavingAccountTest.YearChangeZeroRate" />
       </list>
     </recent_temporary>
   </component>
