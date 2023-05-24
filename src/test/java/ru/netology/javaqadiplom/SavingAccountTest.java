@@ -16,6 +16,31 @@ public class SavingAccountTest {
             new SavingAccount(initialBalance, minBalance, maxBalance, rate);
         });
     }
+
+    @Test
+    public void testConstructorWithNegativeMinBalance() {
+        int initialBalance = 2000;
+        int minBalance = -1_000;
+        int maxBalance = 10_000;
+        int rate = 5;
+
+        Assertions.assertThrows(IllegalArgumentException.class, () -> {
+            new SavingAccount(initialBalance, minBalance, maxBalance, rate);
+        });
+    }
+
+    @Test
+    public void testConstructorWithNegativeInitialBalance() {
+        int initialBalance = -2000;
+        int minBalance = 1_000;
+        int maxBalance = 10_000;
+        int rate = 5;
+
+        Assertions.assertThrows(IllegalArgumentException.class, () -> {
+            new SavingAccount(initialBalance, minBalance, maxBalance, rate);
+        });
+    }
+
     @Test
     public void shouldAddLessThanMaxBalance() {
         SavingAccount account = new SavingAccount(
@@ -29,6 +54,7 @@ public class SavingAccountTest {
 
         Assertions.assertEquals(2_000 + 3_000, account.getBalance());
     }
+
     @Test
     public void shouldAddMoreThanMaxBalance() {
         SavingAccount account = new SavingAccount(
@@ -42,6 +68,7 @@ public class SavingAccountTest {
 
         Assertions.assertEquals(2_000, account.getBalance());
     }
+
     @Test
     public void shouldPayMoreThanMinBalance() {
         SavingAccount account = new SavingAccount(
@@ -55,6 +82,7 @@ public class SavingAccountTest {
 
         Assertions.assertEquals(2_000 - 1_000, account.getBalance());
     }
+
     @Test
     public void shouldPayLessThanMinBalance() {
         SavingAccount account = new SavingAccount(
@@ -68,6 +96,7 @@ public class SavingAccountTest {
 
         Assertions.assertEquals(2_000, account.getBalance());
     }
+
     @Test
     public void YearChangePositiveBalance() {
         SavingAccount account = new SavingAccount(
@@ -78,6 +107,7 @@ public class SavingAccountTest {
         );
         Assertions.assertEquals(100, account.yearChange());
     }
+
     @Test
     public void YearChangeRounding() {
         SavingAccount account = new SavingAccount(
@@ -88,6 +118,7 @@ public class SavingAccountTest {
         );
         Assertions.assertEquals(60, account.yearChange());
     }
+
     @Test
     public void YearChangeZeroRate() {
         SavingAccount account = new SavingAccount(

@@ -7,11 +7,19 @@
     <list default="true" id="a817fe0e-bb28-469b-8608-fd3ee88eaa68" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/javaqadiplom/SavingAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/javaqadiplom/SavingAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/javaqadiplom/SavingAccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/javaqadiplom/SavingAccountTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -27,7 +35,9 @@
     </option>
   </component>
   <component name="ProjectId" id="2Pt2Lh8UldtdHtyP1F9T1iAmyZq" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -36,6 +46,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_directory_selection": "C:/Program Files/Git/JavaDiplomProject/src/main/java/ru/netology/javaqadiplom",
     "last_opened_file_path": "C:/Program Files/Git/JavaDiplomProject"
   }
 }]]></component>
@@ -44,38 +55,7 @@
       <command value="mvn clean verify" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SavingAccountTest">
-    <configuration name="SavingAccountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javaqadiplom" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.netology.javaqadiplom.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.netology.javaqadiplom" />
-      <option name="MAIN_CLASS_NAME" value="ru.netology.javaqadiplom.SavingAccountTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SavingAccountTest.shouldAddLessThanMaxBalance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javaqadiplom" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.netology.javaqadiplom.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.netology.javaqadiplom" />
-      <option name="MAIN_CLASS_NAME" value="ru.netology.javaqadiplom.SavingAccountTest" />
-      <option name="METHOD_NAME" value="shouldAddLessThanMaxBalance" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.SavingAccountTest.shouldPayLessThanMinBalance">
     <configuration name="SavingAccountTest.shouldAddMoreThanMaxBalance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaqadiplom" />
       <extension name="coverage">
@@ -92,6 +72,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SavingAccountTest.shouldPayLessThanMinBalance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaqadiplom" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.netology.javaqadiplom.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.netology.javaqadiplom" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.javaqadiplom.SavingAccountTest" />
+      <option name="METHOD_NAME" value="shouldPayLessThanMinBalance" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SavingAccountTest.testConstructorWithNegativeInitialBalance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaqadiplom" />
       <extension name="coverage">
@@ -103,6 +99,22 @@
       <option name="PACKAGE_NAME" value="ru.netology.javaqadiplom" />
       <option name="MAIN_CLASS_NAME" value="ru.netology.javaqadiplom.SavingAccountTest" />
       <option name="METHOD_NAME" value="testConstructorWithNegativeInitialBalance" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SavingAccountTest.testConstructorWithNegativeMinBalance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaqadiplom" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.netology.javaqadiplom.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.netology.javaqadiplom" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.javaqadiplom.SavingAccountTest" />
+      <option name="METHOD_NAME" value="testConstructorWithNegativeMinBalance" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -126,11 +138,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SavingAccountTest" />
+        <item itemvalue="JUnit.SavingAccountTest.shouldPayLessThanMinBalance" />
         <item itemvalue="JUnit.SavingAccountTest.shouldAddMoreThanMaxBalance" />
-        <item itemvalue="JUnit.SavingAccountTest.shouldAddLessThanMaxBalance" />
-        <item itemvalue="JUnit.SavingAccountTest.testConstructorWithNegativeRate" />
         <item itemvalue="JUnit.SavingAccountTest.testConstructorWithNegativeInitialBalance" />
+        <item itemvalue="JUnit.SavingAccountTest.testConstructorWithNegativeMinBalance" />
+        <item itemvalue="JUnit.SavingAccountTest.testConstructorWithNegativeRate" />
       </list>
     </recent_temporary>
   </component>
