@@ -80,7 +80,7 @@ public class CreditAccountTest {
                 15
         );
 
-        account.pay(-3000);
+        account.pay(6000);
 
         Assertions.assertEquals(0, account.getBalance());
     }

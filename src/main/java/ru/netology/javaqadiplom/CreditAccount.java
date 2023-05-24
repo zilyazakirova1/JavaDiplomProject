@@ -63,6 +63,7 @@ public class CreditAccount extends Account {
      * @param amount - сумма покупки
      * @return true если операция прошла успешно, false иначе.
      */
+
     @Override
     public boolean pay(int amount) {
         if (amount <= 0) {
@@ -76,8 +77,21 @@ public class CreditAccount extends Account {
             return false;
         }
     }
+  /*  @Override
+    public boolean pay(int amount) {
+        if (amount <= 0 || amount>creditLimit) {
+            return false;
+        }
+        balance = balance - amount;
+        if (balance > -creditLimit) {
+            balance = -amount;
+            return true;
+        } else {
+            return false;
+        }
+    }
 
-
+*/
     /**
      * Операция пополнения карты на указанную сумму.
      * В результате успешного вызова этого метода, баланс должен увеличиться
