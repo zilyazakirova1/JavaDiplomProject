@@ -20,7 +20,7 @@ public class CreditAccount extends Account {
      * @param creditLimit    - неотрицательное число, максимальная сумма которую можно задолжать банку
      * @param rate           - неотрицательное число, ставка кредитования для расчёта долга за отрицательный баланс
      */
-   /* public CreditAccount(int initialBalance, int creditLimit, int rate) {
+    public CreditAccount(int initialBalance, int creditLimit, int rate) {
         if (rate <= 0) {
             throw new IllegalArgumentException(
                     "Накопительная ставка не может быть отрицательной, а у вас: " + rate
@@ -30,8 +30,8 @@ public class CreditAccount extends Account {
         this.creditLimit = creditLimit;
         this.rate = rate;
     }
-*/
-    public CreditAccount(int initialBalance, int creditLimit, int rate) throws IllegalArgumentException {
+
+  /*  public CreditAccount(int initialBalance, int creditLimit, int rate) throws IllegalArgumentException {
         if (rate <= 0) {
             throw new IllegalArgumentException(
                     "Накопительная ставка не может быть отрицательной, а у вас: " + rate
@@ -52,6 +52,7 @@ public class CreditAccount extends Account {
         this.rate = rate;
     }
 
+*/
 
     /**
      * Операция оплаты с карты на указанную сумму.
@@ -64,7 +65,7 @@ public class CreditAccount extends Account {
      * @return true если операция прошла успешно, false иначе.
      */
 
-  /*  @Override
+    @Override
     public boolean pay(int amount) {
         if (amount <= 0) {
             return false;
@@ -77,23 +78,20 @@ public class CreditAccount extends Account {
             return false;
         }
     }
-    */
 
-    @Override
+   /* @Override
     public boolean pay(int amount) {
-        if (amount <= 0 || amount>creditLimit) {
+        if (amount <= 0 || amount > creditLimit + balance) {
             return false;
         }
         balance = balance - amount;
         if (balance > -creditLimit) {
             balance = -amount;
-            return true;
-        } else {
-            return false;
         }
+        return true;
     }
 
-
+*/
 
     /**
      * Операция пополнения карты на указанную сумму.
@@ -108,16 +106,16 @@ public class CreditAccount extends Account {
      * @return true если операция прошла успешно, false иначе.
      * @return
      */
-  /*  @Override
-   public boolean add(int amount) {
+    @Override
+    public boolean add(int amount) {
         if (amount <= 0) {
             return false;
         }
         balance = amount;
         return true;
     }
-*/
-    @Override
+
+  /*  @Override
     public boolean add(int amount) {
         if (amount <= 0) {
             return false;
@@ -127,6 +125,7 @@ public class CreditAccount extends Account {
         }
     }
 
+*/
 
     /**
      * Операция расчёта процентов на отрицательный баланс счёта при условии, что
@@ -137,21 +136,21 @@ public class CreditAccount extends Account {
      *
      * @return
      */
- /*   @Override
+    @Override
     public int yearChange() {
         return balance / 100 * rate;
     }
-*/
-    @Override
-    public int yearChange() {
-        if (balance >= 0) {
-            return 0;
-        } else {
-            return balance / 100 * rate;
-        }
-    }
 
+    /*  @Override
+      public int yearChange() {
+          if (balance >= 0) {
+              return 0;
+          } else {
+              return balance / 100 * rate;
+          }
+      }
 
+  */
     public int getCreditLimit() {
         return creditLimit;
     }

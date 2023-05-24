@@ -6,7 +6,6 @@ import org.junit.jupiter.api.Test;
 public class CreditAccountTest {
 
 
-
     @Test
     public void shouldAddToPositiveBalance() {
         CreditAccount account = new CreditAccount(
@@ -120,8 +119,6 @@ public class CreditAccountTest {
                 5000,
                 15
         );
-
-        // account.yearChange();
 
         Assertions.assertEquals(-30, account.yearChange());
     }
