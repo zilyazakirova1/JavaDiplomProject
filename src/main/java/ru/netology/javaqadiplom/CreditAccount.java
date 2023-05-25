@@ -20,37 +20,37 @@ public class CreditAccount extends Account {
      * @param creditLimit    - неотрицательное число, максимальная сумма которую можно задолжать банку
      * @param rate           - неотрицательное число, ставка кредитования для расчёта долга за отрицательный баланс
      */
-//    public CreditAccount(int initialBalance, int creditLimit, int rate) {
-//        if (rate <= 0) {
-//            throw new IllegalArgumentException(
-//                    "Накопительная ставка не может быть отрицательной, а у вас: " + rate
-//            );
-//        }
-//        this.balance = initialBalance;
-//        this.creditLimit = creditLimit;
-//        this.rate = rate;
-//    }
-
-    public CreditAccount(int initialBalance, int creditLimit, int rate) throws IllegalArgumentException {
+    public CreditAccount(int initialBalance, int creditLimit, int rate) {
         if (rate <= 0) {
             throw new IllegalArgumentException(
                     "Накопительная ставка не может быть отрицательной, а у вас: " + rate
-            );
-        } else if (initialBalance < 0) {
-            throw new IllegalArgumentException(
-                    "Начальный баланс для счёта не может быть отрицательным, а у вас: " + initialBalance
-            );
-
-
-        } else if (creditLimit < 0) {
-            throw new IllegalArgumentException(
-                    "Максимальная сумма которую можно задолжать банку не может быть отрицательной, а у вас: " + creditLimit
             );
         }
         this.balance = initialBalance;
         this.creditLimit = creditLimit;
         this.rate = rate;
     }
+
+//    public CreditAccount(int initialBalance, int creditLimit, int rate) throws IllegalArgumentException {
+//        if (rate <= 0) {
+//            throw new IllegalArgumentException(
+//                    "Накопительная ставка не может быть отрицательной, а у вас: " + rate
+//            );
+//        } else if (initialBalance < 0) {
+//            throw new IllegalArgumentException(
+//                    "Начальный баланс для счёта не может быть отрицательным, а у вас: " + initialBalance
+//            );
+//
+//
+//        } else if (creditLimit < 0) {
+//            throw new IllegalArgumentException(
+//                    "Максимальная сумма которую можно задолжать банку не может быть отрицательной, а у вас: " + creditLimit
+//            );
+//        }
+//        this.balance = initialBalance;
+//        this.creditLimit = creditLimit;
+//        this.rate = rate;
+//    }
 
 
 
@@ -65,31 +65,31 @@ public class CreditAccount extends Account {
      * @return true если операция прошла успешно, false иначе.
      */
 
-//    @Override
-//    public boolean pay(int amount) {
-//        if (amount <= 0) {
-//            return false;
-//        }
-//        balance = balance - amount;
-//        if (balance > -creditLimit) {
-//            balance = -amount;
-//            return true;
-//        } else {
-//            return false;
-//        }
-//    }
-
     @Override
     public boolean pay(int amount) {
-        if (amount <= 0 || amount > creditLimit + balance) {
+        if (amount <= 0) {
             return false;
         }
         balance = balance - amount;
         if (balance > -creditLimit) {
             balance = -amount;
+            return true;
+        } else {
+            return false;
         }
-        return true;
     }
+
+//    @Override
+//    public boolean pay(int amount) {
+//        if (amount <= 0 || amount > creditLimit + balance) {
+//            return false;
+//        }
+//        balance = balance - amount;
+//        if (balance > -creditLimit) {
+//            balance = -amount;
+//        }
+//        return true;
+//    }
 
 
 
@@ -106,24 +106,24 @@ public class CreditAccount extends Account {
      * @return true если операция прошла успешно, false иначе.
      * @return
      */
-//    @Override
-//    public boolean add(int amount) {
-//        if (amount <= 0) {
-//            return false;
-//        }
-//        balance = amount;
-//        return true;
-//    }
-
     @Override
     public boolean add(int amount) {
         if (amount <= 0) {
             return false;
-        } else {
-            balance = balance + amount;
-            return true;
         }
+        balance = amount;
+        return true;
     }
+
+//    @Override
+//    public boolean add(int amount) {
+//        if (amount <= 0) {
+//            return false;
+//        } else {
+//            balance = balance + amount;
+//            return true;
+//        }
+//    }
 
 
 
@@ -136,19 +136,19 @@ public class CreditAccount extends Account {
      *
      * @return
      */
-//    @Override
-//    public int yearChange() {
-//        return balance / 100 * rate;
-//    }
+    @Override
+    public int yearChange() {
+        return balance / 100 * rate;
+    }
 
-      @Override
-      public int yearChange() {
-          if (balance >= 0) {
-              return 0;
-          } else {
-              return balance / 100 * rate;
-          }
-      }
+//      @Override
+//      public int yearChange() {
+//          if (balance >= 0) {
+//              return 0;
+//          } else {
+//              return balance / 100 * rate;
+//          }
+//      }
 
 
     public int getCreditLimit() {
