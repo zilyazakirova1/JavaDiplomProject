@@ -54,26 +54,13 @@ public class CreditAccount extends Account {
      */
 
 
-  /* @Override
-    public boolean pay(int amount) {
-        if (amount <= 0 || amount > creditLimit + balance) {
-            return false;
-        }
-        balance = balance - amount;
-        if (balance > -creditLimit) {
-            balance = -amount;
-        }
-        return true;
-    }
-*/
-
     @Override
     public boolean pay(int amount) {
         if (amount <= 0) {
             return false;
         }
-        if (balance - amount>= -creditLimit) {
-            balance = balance-amount;
+        if (balance - amount >= -creditLimit) {
+            balance = balance - amount;
             return true;
         } else {
             return false;
