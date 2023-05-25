@@ -10,6 +10,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -22,6 +29,11 @@
         <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
+
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+
   </component>
   <component name="ProjectId" id="2Pt2Lh8UldtdHtyP1F9T1iAmyZq" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -32,18 +44,19 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
-  }
 }</component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn clean verify" />
     </option>
   </component>
+
   <component name="RunManager" selected="JUnit.SavingAccountTest.YearChangePositiveBalance">
     <configuration name="CreditAccountTest.shouldAddToPositiveBalance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+
+  <component name="RunManager" selected="JUnit.SavingAccountTest.shouldPayAmountMoreZero">
+    <configuration name="SavingAccountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+
       <module name="javaqadiplom" />
       <extension name="coverage">
         <pattern>
@@ -52,14 +65,23 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.netology.javaqadiplom" />
+
       <option name="MAIN_CLASS_NAME" value="ru.netology.javaqadiplom.CreditAccountTest" />
       <option name="METHOD_NAME" value="shouldAddToPositiveBalance" />
       <option name="TEST_OBJECT" value="method" />
+
+      <option name="MAIN_CLASS_NAME" value="ru.netology.javaqadiplom.SavingAccountTest" />
+      <option name="TEST_OBJECT" value="class" />
+
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+
     <configuration name="CreditAccountTest.shouldYearChangeIfBalanceNegative" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+
+    <configuration name="SavingAccountTest.YearChangeZeroRate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+
       <module name="javaqadiplom" />
       <extension name="coverage">
         <pattern>
@@ -68,14 +90,22 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.netology.javaqadiplom" />
+
       <option name="MAIN_CLASS_NAME" value="ru.netology.javaqadiplom.CreditAccountTest" />
       <option name="METHOD_NAME" value="shouldYearChangeIfBalanceNegative" />
+
+      <option name="MAIN_CLASS_NAME" value="ru.netology.javaqadiplom.SavingAccountTest" />
+
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+
     <configuration name="SavingAccountTest.YearChangePositiveBalance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+
+    <configuration name="SavingAccountTest.minBalanceBMoreThanMaxBalance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+
       <module name="javaqadiplom" />
       <extension name="coverage">
         <pattern>
@@ -84,13 +114,23 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.netology.javaqadiplom" />
+
       <option name="MAIN_CLASS_NAME" value="ru.netology.javaqadiplom.CreditAccountTest" />
       <option name="TEST_OBJECT" value="class" />
+
+      <option name="MAIN_CLASS_NAME" value="ru.netology.javaqadiplom.SavingAccountTest" />
+      <option name="METHOD_NAME" value="minBalanceBMoreThanMaxBalance" />
+      <option name="TEST_OBJECT" value="method" />
+
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+
     <configuration name="SavingAccountTest.YearChangeZeroRate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+
+    <configuration name="SavingAccountTest.shouldAddAmountMoreZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+
       <module name="javaqadiplom" />
       <extension name="coverage">
         <pattern>
@@ -100,13 +140,21 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.netology.javaqadiplom" />
       <option name="MAIN_CLASS_NAME" value="ru.netology.javaqadiplom.SavingAccountTest" />
+
       <option name="METHOD_NAME" value="YearChangeZeroRate" />
+
+      <option name="METHOD_NAME" value="shouldAddAmountMoreZero" />
+
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+
     <configuration name="SavingAccountTest.shouldAddLessThanMaxBalance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+
+    <configuration name="SavingAccountTest.shouldPayAmountMoreZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+
       <module name="javaqadiplom" />
       <extension name="coverage">
         <pattern>
@@ -116,7 +164,11 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.netology.javaqadiplom" />
       <option name="MAIN_CLASS_NAME" value="ru.netology.javaqadiplom.SavingAccountTest" />
+
       <option name="METHOD_NAME" value="shouldAddLessThanMaxBalance" />
+
+      <option name="METHOD_NAME" value="shouldPayAmountMoreZero" />
+
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -124,10 +176,17 @@
     </configuration>
     <recent_temporary>
       <list>
+
         <item itemvalue="JUnit.SavingAccountTest.YearChangePositiveBalance" />
         <item itemvalue="JUnit.CreditAccountTest.shouldAddToPositiveBalance" />
         <item itemvalue="JUnit.CreditAccountTest.shouldYearChangeIfBalanceNegative" />
         <item itemvalue="JUnit.SavingAccountTest.shouldAddLessThanMaxBalance" />
+
+        <item itemvalue="JUnit.SavingAccountTest.shouldPayAmountMoreZero" />
+        <item itemvalue="JUnit.SavingAccountTest.shouldAddAmountMoreZero" />
+        <item itemvalue="JUnit.SavingAccountTest.minBalanceBMoreThanMaxBalance" />
+        <item itemvalue="JUnit.SavingAccountTest" />
+
         <item itemvalue="JUnit.SavingAccountTest.YearChangeZeroRate" />
       </list>
     </recent_temporary>
