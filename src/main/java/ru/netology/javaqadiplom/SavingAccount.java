@@ -45,32 +45,6 @@ public class SavingAccount extends Account {
         this.rate = rate;
     }
 
- /*  public SavingAccount(int initialBalance, int minBalance, int maxBalance, int rate) {
-        if (rate < 0) {
-            throw new IllegalArgumentException(
-                    "Накопительная ставка не может быть отрицательной, а у вас: " + rate
-            );
-        }  else if (maxBalance < minBalance) {
-            throw new IllegalArgumentException(
-                    "Максимальный баланс не может быть меньше маинимального"
-            );
-        } else if (initialBalance<0) {
-            throw new IllegalArgumentException(
-                    "Начальный баланс не может быть отрицательным,а у вас: " + initialBalance
-            );
-        }else if (minBalance<0) {
-            throw new IllegalArgumentException(
-                    "Минимальный баланс не может быть отрицательным,а у вас: " + minBalance
-            );
-        }
-
-
-        this.balance = initialBalance;
-        this.minBalance = minBalance;
-        this.maxBalance = maxBalance;
-        this.rate = rate;
-    }
-*/
     /**
      * Операция оплаты с карты на указанную сумму.
      * В результате успешного вызова этого метода, баланс должен уменьшиться
