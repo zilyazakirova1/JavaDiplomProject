@@ -16,7 +16,7 @@ public class CreditAccountTest {
         account.add(3000);
         account.add(3_000);
 
-        Assertions.assertEquals(3000, account.getBalance());
+        Assertions.assertEquals(6000, account.getBalance());
     }
 
     @Test
@@ -107,7 +107,7 @@ public class CreditAccountTest {
                 15
         );
 
-        //  account.yearChange();
+        account.yearChange();
 
         Assertions.assertEquals(0, account.yearChange());
     }
@@ -120,7 +120,7 @@ public class CreditAccountTest {
                 15
         );
 
-        // account.yearChange();
+        account.yearChange();
 
         Assertions.assertEquals(-30, account.yearChange());
     }
