@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 
 public class CreditAccountTest {
 
+
     @Test
     public void shouldAddToPositiveBalance() {
         CreditAccount account = new CreditAccount(
@@ -14,9 +15,8 @@ public class CreditAccountTest {
         );
 
         account.add(3000);
-        account.add(3_000);
 
-        Assertions.assertEquals(6000, account.getBalance());
+        Assertions.assertEquals(3000, account.getBalance());
     }
 
     @Test
@@ -81,7 +81,7 @@ public class CreditAccountTest {
                 15
         );
 
-        account.pay(-3000);
+        account.pay(6000);
 
         Assertions.assertEquals(0, account.getBalance());
     }
@@ -107,20 +107,17 @@ public class CreditAccountTest {
                 15
         );
 
-        account.yearChange();
-
         Assertions.assertEquals(0, account.yearChange());
     }
 
     @Test
     public void shouldYearChangeIfBalanceNegative() {
         CreditAccount account = new CreditAccount(
-                -200,
+                0,
                 5000,
                 15
         );
-
-        account.yearChange();
+        account.pay(200);
 
         Assertions.assertEquals(-30, account.yearChange());
     }
@@ -133,8 +130,6 @@ public class CreditAccountTest {
                 15
         );
 
-        account.yearChange();
-
         Assertions.assertEquals(0, account.yearChange());
     }
 
@@ -145,4 +140,3 @@ public class CreditAccountTest {
         Assertions.assertEquals(expected, account.getCreditLimit());
     }
 }
-

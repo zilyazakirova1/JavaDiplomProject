@@ -52,18 +52,18 @@ public class CreditAccount extends Account {
      * @param amount - сумма покупки
      * @return true если операция прошла успешно, false иначе.
      */
+
+
     @Override
     public boolean pay(int amount) {
-        if (amount <= 0) {
+        if (amount <= 0 || amount > creditLimit + balance) {
             return false;
         }
         balance = balance - amount;
         if (balance > -creditLimit) {
             balance = -amount;
-            return true;
-        } else {
-            return false;
         }
+        return true;
     }
 
 
@@ -80,6 +80,7 @@ public class CreditAccount extends Account {
      * @return true если операция прошла успешно, false иначе.
      * @return
      */
+
     @Override
     public boolean add(int amount) {
         if (amount <= 0) {
@@ -113,3 +114,8 @@ public class CreditAccount extends Account {
         return creditLimit;
     }
 }
+
+
+
+
+
