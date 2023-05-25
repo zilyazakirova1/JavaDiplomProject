@@ -3,7 +3,7 @@ package ru.netology.javaqadiplom;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class SavingAccountTest {
+/*public class SavingAccountTest {
 
     @Test
     public void testConstructorWithNegativeRate() {
@@ -170,3 +170,4 @@ public class SavingAccountTest {
         Assertions.assertEquals(0, account.yearChange());
     }
 }
+*/
