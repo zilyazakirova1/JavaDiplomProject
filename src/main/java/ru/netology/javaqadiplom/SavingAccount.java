@@ -25,7 +25,7 @@ public class SavingAccount extends Account {
             throw new IllegalArgumentException(
                     "Накопительная ставка не может быть отрицательной, а у вас: " + rate
             );
-        }/* else if (initialBalance < 0) {
+        } else if (initialBalance < 0) {
             throw new IllegalArgumentException(
                     "Начальный баланс для счёта не может быть отрицательным, а у вас: " + initialBalance
             );
@@ -38,7 +38,7 @@ public class SavingAccount extends Account {
                     "Мин баланс не может быть отрицательным, а у вас: " + minBalance
             );
         }
-*/
+
         this.balance = initialBalance;
         this.minBalance = minBalance;
         this.maxBalance = maxBalance;
@@ -55,7 +55,7 @@ public class SavingAccount extends Account {
      * @param amount - сумма покупки
      * @return true если операция прошла успешно, false иначе.
      */
-   /*  @Override
+    @Override
     public boolean pay(int amount) {
         if (amount <= 0) {
             return false;
@@ -66,19 +66,7 @@ public class SavingAccount extends Account {
         balance = balance - amount;
         return true;
     }
-*/
-    @Override
-    public boolean pay(int amount) {
-        if (amount <= 0) {
-            return false;
-        }
-        balance = balance - amount;
-        if (balance > minBalance) {
-            return true;
-        } else {
-            return false;
-        }
-    }
+
 
     /**
      * Операция пополнения карты на указанную сумму.
@@ -93,7 +81,7 @@ public class SavingAccount extends Account {
      * @return
      */
     @Override
-   /* public boolean add(int amount) {
+    public boolean add(int amount) {
         if (amount <= 0) {
             return false;
         }
@@ -102,18 +90,6 @@ public class SavingAccount extends Account {
         }
         balance = balance + amount;
         return true;
-    }
-*/
-    public boolean add(int amount) {
-        if (amount <= 0) {
-            return false;
-        }
-        if (balance + amount < maxBalance) {
-            balance = amount;
-            return true;
-        } else {
-            return false;
-        }
     }
 
     /**
