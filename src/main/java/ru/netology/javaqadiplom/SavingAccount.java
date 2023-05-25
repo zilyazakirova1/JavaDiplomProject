@@ -25,7 +25,7 @@ public class SavingAccount extends Account {
             throw new IllegalArgumentException(
                     "Накопительная ставка не может быть отрицательной, а у вас: " + rate
             );
-        } /*else if (initialBalance < 0) {
+        }/* else if (initialBalance < 0) {
             throw new IllegalArgumentException(
                     "Начальный баланс для счёта не может быть отрицательным, а у вас: " + initialBalance
             );
@@ -38,7 +38,7 @@ public class SavingAccount extends Account {
                     "Мин баланс не может быть отрицательным, а у вас: " + minBalance
             );
         }
-        */
+*/
         this.balance = initialBalance;
         this.minBalance = minBalance;
         this.maxBalance = maxBalance;
@@ -55,7 +55,7 @@ public class SavingAccount extends Account {
      * @param amount - сумма покупки
      * @return true если операция прошла успешно, false иначе.
      */
-    /* @Override
+   /*  @Override
     public boolean pay(int amount) {
         if (amount <= 0) {
             return false;
@@ -66,8 +66,7 @@ public class SavingAccount extends Account {
         balance = balance - amount;
         return true;
     }
-     */
-
+*/
     @Override
     public boolean pay(int amount) {
         if (amount <= 0) {
@@ -80,6 +79,7 @@ public class SavingAccount extends Account {
             return false;
         }
     }
+
     /**
      * Операция пополнения карты на указанную сумму.
      * В результате успешного вызова этого метода, баланс должен увеличиться
@@ -92,8 +92,8 @@ public class SavingAccount extends Account {
      * @return true если операция прошла успешно, false иначе.
      * @return
      */
-    /*@Override
-    public boolean add(int amount) {
+    @Override
+   /* public boolean add(int amount) {
         if (amount <= 0) {
             return false;
         }
@@ -103,7 +103,7 @@ public class SavingAccount extends Account {
         balance = balance + amount;
         return true;
     }
-     */
+*/
     public boolean add(int amount) {
         if (amount <= 0) {
             return false;

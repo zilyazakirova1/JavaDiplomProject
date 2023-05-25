@@ -40,6 +40,7 @@ public class SavingAccountTest {
             new SavingAccount(initialBalance, minBalance, maxBalance, rate);
         });
     }
+
     @Test
     public void minBalanceBMoreThanMaxBalance() {
         int initialBalance = 2000;
@@ -79,6 +80,7 @@ public class SavingAccountTest {
 
         Assertions.assertEquals(2_000, account.getBalance());
     }
+
     @Test
     public void shouldAddAmountMoreZero() {
         SavingAccount account = new SavingAccount(
@@ -120,6 +122,7 @@ public class SavingAccountTest {
 
         Assertions.assertEquals(2_000, account.getBalance());
     }
+
     @Test
     public void shouldPayAmountMoreZero() {
         SavingAccount account = new SavingAccount(

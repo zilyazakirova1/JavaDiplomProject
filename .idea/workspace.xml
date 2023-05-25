@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a817fe0e-bb28-469b-8608-fd3ee88eaa68" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/javaqadiplom/SavingAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/javaqadiplom/SavingAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/javaqadiplom/SavingAccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/javaqadiplom/SavingAccountTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="a817fe0e-bb28-469b-8608-fd3ee88eaa68" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -159,13 +155,6 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="COLUMN_ID_WIDTH">
-                <map>
-                  <entry key="Table.Default.Author.ColumnIdWidth" value="111" />
-                  <entry key="Table.Default.Date.ColumnIdWidth" value="77" />
-                  <entry key="Table.Space.CommitStatus.ColumnIdWidth" value="66" />
-                </map>
-              </option>
               <option name="FILTERS">
                 <map>
                   <entry key="branch">
@@ -175,6 +164,13 @@
                       </list>
                     </value>
                   </entry>
+                </map>
+              </option>
+              <option name="COLUMN_ID_WIDTH">
+                <map>
+                  <entry key="Table.Default.Author.ColumnIdWidth" value="111" />
+                  <entry key="Table.Default.Date.ColumnIdWidth" value="77" />
+                  <entry key="Table.Space.CommitStatus.ColumnIdWidth" value="66" />
                 </map>
               </option>
             </State>
